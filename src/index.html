@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>herozer</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <script type="module" crossorigin src="js/app.js"></script>
+
+    <link rel="stylesheet" crossorigin href="app.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77FNY9PD7R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-77FNY9PD7R');
+    </script>
+</head>
+
+<body x-data="{}">
+    <video class="fixed min-w-full min-h-screen flex justify-center items-center z-[-1] object-cover"
+        src="images/background.mp4" loop autoplay muted class="h-screen w-auto object-cover"></video>
+
+    <div x-data="{}" class="w-full flex flex-col justify-center items-center bg-gradient-to-b py-10">
+        <div
+            class="text-white w-full max-w-3xl text-center rounded-lg p-10 bg-opacity-40 backdrop-blur-lg bg-gray-800 shadow-2xl ">
+            <image src="images/allNighterBanner.png"
+                class="text-5xl font-extrabold bg-clip-text text-transparent" />
+
+            <iframe class="w-full overscroll-none scale-[.5]" src="/timer"></iframe>
+
+            <br />
+
+            <!-- Level Submissions -->
+            <div x-large-button x-color="bg-blue-600" x-link="https:\/\/forms.gle/MmsDCHWbJqFyoXvM9"
+                x-title="Level Submissions">
+                <svg fill="transparent" stroke="white" viewBox="0 0 48.00 48.00" xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="3" class="h-8 w-8">
+                    <rect class="a" x="9.5043" y="9.5043" width="28.9914" height="28.9914"
+                        transform="translate(-9.9411 24) rotate(-45)"></rect>
+                    <rect class="a" x="12.7707" y="22.0809" width="5.4849" height="5.4849"
+                        transform="translate(-13.009 18.24) rotate(-45)"></rect>
+                    <rect class="a" x="21.7365" y="13.115" width="5.4849" height="5.4849"
+                        transform="translate(-4.0432 21.9538) rotate(-45)"></rect>
+                    <rect class="a" x="18.1422" y="25.9303" width="19.5888" height="4.7013"
+                        transform="translate(-11.8152 28.0375) rotate(-45)"></rect>
+                </svg>
+            </div>
+
+            <!-- Donations -->
+            <div x-large-button x-color="bg-green-400"
+                x-link="https:\/\/streamlabscharity.com/@herozer/geometry-dash-all-nighter-2025"
+                x-title="Donations (Stand Up To Cancer)">
+                <img src="images/donations.png" class="h-8 w-8" />
+            </div>
+
+            <div style="display: flex; justify-content: center; width: 100%; padding-bottom: 20px;">
+                <a href="https://discord.gg/mUTpD5hsWH" target="_blank">
+                    <img src="https://discordapp.com/api/guilds/1214266185710043258/widget.png?style=banner2"
+                        style="border-radius: 87px; width: 250px;" alt="Join Discord" />
+                </a>
+            </div>
+
+            <!-- Videos -->
+            <div>
+                <div x-youtube-embed x-video-id="1caWMjFPV_c" x-title="ENG Trailer"></div>
+            </div>
+
+            <div>
+                <div x-youtube-embed x-video-id="LbR_H31cHDo" x-title="ESP Trailer"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
