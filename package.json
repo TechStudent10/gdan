@@ -12,7 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist --cname gdan.herozer.com"
   },
-  "author": "CoderTJP & herozer",
+  "author": "herozer + underscored",
   "devDependencies": {
     "alpinejs": "^3.14.7",
     "autoprefixer": "^10.4.20",
@@ -22,3 +22,4 @@
     "vite": "^6.0.1"
   }
 }
+
